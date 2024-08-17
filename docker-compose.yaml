@@ -1,0 +1,29 @@
+services:
+  api:
+    container_name: api
+    build:
+      context: ./api
+      dockerfile: ./Dockerfile
+    tty: true
+    depends_on:
+      - db
+    ports:
+      - "8880:8880"
+    volumes:
+      - ./api:/go/src/app
+    env_file:
+      - ./api/.env
+  db:
+    container_name: postgres
+    image: postgres:15.4
+    tty: true
+    ports:
+      - "6432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: myExpenses
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+volumes:
+  postgres_data:
