@@ -6,6 +6,7 @@ import (
 	"myExpenses/models"
 	"os"
 
+	_ "github.com/lib/pq"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )

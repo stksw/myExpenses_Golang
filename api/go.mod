@@ -8,7 +8,11 @@ require (
 	cloud.google.com/go/compute/metadata v0.5.0 // indirect
 	entgo.io/ent v0.14.0 // indirect
 	github.com/GoogleCloudPlatform/cloudsql-proxy v1.36.0 // indirect
+	github.com/ajg/form v1.5.1 // indirect
 	github.com/felixge/httpsnoop v1.0.4 // indirect
+	github.com/go-chi/chi/v5 v5.1.0 // indirect
+	github.com/go-chi/cors v1.2.1 // indirect
+	github.com/go-chi/render v1.0.3 // indirect
 	github.com/go-logr/logr v1.4.1 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
